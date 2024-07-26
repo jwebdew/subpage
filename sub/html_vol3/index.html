@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하수정</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            /*    setTimeout(function(){
+                   $('.loading').slideUp(600);
+                    
+   
+               }, 2000); */
+
+            
+            setTimeout(function(){
+                $('.main_visual .video').animate({
+                    'opacity' : '1', 
+                    'bottom' : '0'
+                }, 600, 'linear');
+                $('.main_visual .text').css('color', 'transparent')
+
+            }, 3000);
+
+
+            setTimeout(function(){
+                $('.main_visual .video').animate({
+                    'width' : '100%',
+                }, 600, 'linear');
+                
+            }, 5000);
+
+            setTimeout(function(){
+                
+                $('.main_visual .text').css('color', '#fff')
+            }, 6000);
+
+
+        });//script end
+    </script>
+</head>
+
+<body>
+    <div class="loading">
+        <video autoplay loop muted src="img/video-visual-2.mp4"></video>
+        <div class="text">
+            <h2>어서오세요.</h2>
+            <p>이곳은 웹/앱 디자인, 퍼블리싱, 오픈소스 등<br />
+                당신이 필요한 디자인을, 코드를 보고 담아갈 수 있는 공간인<br />
+                <strong>season36.5</strong>입니다.
+            </p>
+        </div>
+    </div>
+    <div id="wrap">
+        <header class="header" id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#">
+                        <strong>season36.5</strong>
+                        <!-- <span>HASUJEONG</span> -->
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="#">시즌36.5</a></li>
+                        <li><a href="#">수업자료</a></li>
+                        <li><a href="#">훈련생결과물</a></li>
+                        <li><a href="#">사전</a></li>
+                    </ul>
+                </nav>
+
+                <button>메뉴</button>
+            </div><!-- .inner end -->
+
+        </header><!-- .header end -->
+
+        <main id="main">
+            <section class="main_visual">
+                <figure class="video">
+                    <video autoplay loop muted>
+                        <source src="img/video-visual.mp4">
+                    </video>
+                </figure>
+
+                <div class="text">
+                    <h2>어서오세요.</h2>
+                    <p>이곳은 웹/앱 디자인, 퍼블리싱, 오픈소스 등<br />
+                        당신이 필요한 디자인을, 코드를 보고 담아갈 수 있는 공간인<br />
+                        <strong>season36.5</strong>입니다.
+                    </p>
+                </div>
+
+                <!-- <div class="image">
+                    <figure>
+                        <img src="img/portfolio_bg-1.png" alt="">
+                    </figure>
+                    <figure>
+                        <img src="img/portfolio_bg-2.png" alt="">
+                    </figure>
+                </div> -->
+            </section><!-- .main_visual end -->
+
+          
+            <section class="work">
+                 
+                <div class="inner">
+                    <div class="item_wrap item_wrap-d">
+
+                        <div class="title">
+                            <h3>디자인</h3>
+                            <a href="#">더보기</a>
+                        </div><!-- .title end -->
+                        <div class="item_wrap_inner">
+                            <div class="item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/design/i_event02.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/design/i_sns_event01.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/design/i_event01.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/design/i_basic_04.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </div><!-- .item end -->
+                        </div><!-- .item_wrap_inner end -->
+
+                    </div><!-- .item_wrap end  -->
+
+                    <div class="item_wrap item_wrap-p">
+                        <div class="title">
+                            <h3>퍼블리싱</h3>
+                            <a href="#">더보기</a>
+                        </div><!-- .title end -->
+                        <div class="item_wrap_inner">
+                            <div class="item">
+                                
+                                <div>
+                                    <h4>AirDrop / 리뉴얼</h4>
+                                    <p>시즌36.5님이 제작한 홈페이지</p>
+                                </div>
+                                <figure>
+                                    <a href="">
+                                        <img src="img/portfolio/main-f5nature.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <ul class="btn">
+                                    <li>이전</li>
+                                    <li>다음</li>
+                                </ul>
+                            
+                            </div>
+                        </div>
+                    </div><!-- .item_wrap .item_wrap-p -->
+
+                    
+                </div><!-- .inner end -->
+            </section><!-- .work end -->
+
+            <section class="motion">
+                <div class="inner">
+                    <div class="title">
+                        <h3>모션 코드</h3>
+                        <p>웹/앱 애니메이션/모션 효과 적용</p>
+                    </div>
+
+                    <div class="item_wrap">
+                        <div class="item"> 
+                            <figure class="item--bg">
+                                <img src="img/blue-01.jpg" alt="">
+                            </figure>
+                            <div class="item--in">
+                                <div class="item--in--tit">
+                                    <h4>요소 값 가져오기</h4>
+                                    <span>Vanilla JS</span>
+                                </div><!-- .item__tit end -->
+
+                                <figure class="item--in-image">
+                                    <img src="img/blue-01.jpg" alt="">
+                                </figure>
+
+                                <div class="item--in--text">
+                                    <p>"요소의 img값 또는 텍스트등 동일한 값을 가져올 수 있음."</p>
+                                </div>
+                            </div>
+                              
+                        </div><!-- .item end -->
+
+                        <div class="item item-02"> 
+                            <figure class="item--bg">
+                                <img src="img/blue-02.jpg" alt="">
+                            </figure>
+                            <div class="item--in">
+                                <figure class="item--in-image">
+                                    <img src="img/blue-02.jpg" alt="">
+                                </figure>
+                                <div class="item--in--tit"> 
+                                    <h4>콘텐츠 위치에 따라</h4>
+                                    <span>Vanilla JS</span>
+                                </div><!-- .item__tit end -->
+                                <div class="item--in--text">
+                                    <p>"요소의 img값 또는 텍스트등 동일한 값을 가져올 수 있음."</p>
+                                </div>
+
+                            </div>
+                              
+                        </div><!-- .item end -->
+
+                        <div class="item"> 
+                            <figure class="item--bg">
+                                <img src="img/blue-01.jpg" alt="">
+                            </figure>
+                            <div class="item--in">
+                                <div class="item--in--tit">
+                                    <h4>요소 값 가져오기</h4>
+                                    <span>Vanilla JS</span>
+                                </div><!-- .item__tit end -->
+
+                                <figure class="item--in-image">
+                                    <img src="img/blue-01.jpg" alt="">
+                                </figure>
+
+                                <div class="item--in--text">
+                                    <p>"요소의 img값 또는 텍스트등 동일한 값을 가져올 수 있음."</p>
+                                </div>
+                            </div>
+                              
+                        </div><!-- .item end -->
+
+                        <div class="item item-02"> 
+                            <figure class="item--bg">
+                                <img src="img/blue-02.jpg" alt="">
+                            </figure>
+                            <div class="item--in">
+                                <figure class="item--in-image">
+                                    <img src="img/blue-02.jpg" alt="">
+                                </figure>
+                                <div class="item--in--tit"> 
+                                    <h4>콘텐츠 위치에 따라</h4>
+                                    <span>Vanilla JS</span>
+                                </div><!-- .item__tit end -->
+                                <div class="item--in--text">
+                                    <p>"요소의 img값 또는 텍스트등 동일한 값을 가져올 수 있음."</p>
+                                </div>
+                                
+                            </div>
+                              
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+                </div><!-- .inner end -->
+            </section><!-- .motion end -->
+        </main><!-- #main end -->
+    </div><!-- #wrap end -->
+</body>
+
+</html>
